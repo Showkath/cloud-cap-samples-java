@@ -8,16 +8,14 @@ entity Books : cuid, managed {
   author   : Association to Authors;
   stock    : Integer;
   price    : Decimal(9,2);
-  currency : Currency;
+  currency : Currency
 }
 
 entity Authors : cuid, managed {
   @assert.format: '^\p{Lu}.*' // assert that name starts with a capital letter
   name         : String(111);
   dateOfBirth  : Date;
-  dateOfDeath  : Date;
   placeOfBirth : String;
-  placeOfDeath : String;
   books        : Association to many Books on books.author = $self;
 }
 
