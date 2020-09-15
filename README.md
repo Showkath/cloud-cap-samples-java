@@ -91,7 +91,7 @@ Make sure you have set up a development environment (that means, you’ve instal
 1.  Clone the project:
 
 ```bash
-  git clone https://github.com/SAP-samples/cloud-cap-samples-java.git
+  git clone https://github.com/Showkath/cloud-cap-samples-java.git
 ```
 
 2. Build and run the application:
